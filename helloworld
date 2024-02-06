@@ -1,0 +1,9 @@
+#! /bin/bash
+
+#/bin/bash to indicate that you want the operating system to use the bash shell interpreter
+
+# -> # is used for in line comment
+
+echo "hello Neo!"
+echo "Wake Up!"
+
