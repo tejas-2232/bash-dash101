@@ -37,6 +37,13 @@ echo "******************** CPU Load ***********************"
 mpstat
 echo "                "
 
+echo "************************** update package list ************************************"
+sudo apt-get update
+
+echo "*****************Installing net-tools which contains ifconfig*********************"
+sudo apt install -y net-tools
+
+
 echo "******************** Network Statistics ***********************"
 ifconfig
 echo "                "
