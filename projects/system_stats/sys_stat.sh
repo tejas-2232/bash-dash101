@@ -18,21 +18,36 @@ echo "hi $name , welcome"
 echo "***************************************************************"
 echo "                                                               "
 
+echo "******************** Current Date and Time ***********************"
 date | awk ''
 
-echo "******************** Current Date and Time ***********************"
-
+time
 echo "******************** Disk space Available ***********************"
+df -h
+
+echo "******************** Memory Usage ***********************"
+free -h
+echo "               "
 
 echo "******************** User Uptime ***********************"
+uptime
+echo "                "
+
+echo "******************** CPU Load ***********************"
+mpstat
+echo "                "
+
+echo "******************** Network Statistics ***********************"
+ifconfig
+echo "                "
 
 echo "******************** Last 3 Login Details ***********************"
+echo "                "
 
 echo "******************** currently connected ***********************"
+echo "                "
 
 
 
-
-
-
-
+echo "============================================"
+echo "report generated on: $(date)"
